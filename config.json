@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    {
+      "name": "gitlab to skype plugin",
+      "input": {
+        "script": "inputs/gitlab/gitlab.py",
+        "name": "gitlab"
+      },
+      "output": {
+        "script" : "outputs/skype/notifier.py",
+        "name": "skype"
+      }
+    }
+  ]
+}

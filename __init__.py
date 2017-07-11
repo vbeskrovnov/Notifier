@@ -1,6 +1,8 @@
 import urllib2
 import json
 
+import notifier
+
 repositories = ["1888", "1588", "1499", "977"]
 private_token = "aHTy85Xzs1hbAjFkY111"
 
@@ -12,4 +14,10 @@ for repository_id in repositories:
                                ).read()
     json_response = json.loads(response)
     for mr in json_response:
-        print mr['author']['name'] + " wait while '" + mr['title'] + "' will be reviewed. You can open it by link: " + mr['web_url']
+        if not mr['work_in_progress']:
+            author_name = mr['author']['name']
+            mr_title = mr['title']
+            mr_url = mr['web_url']
+            notifier.notify(
+                author_name + " wait while '" + mr_title + "' will be reviewed. You can open it by link: " + mr_url
+            )

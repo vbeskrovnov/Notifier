@@ -1,0 +1,19 @@
+{
+  "skype": {
+    "login": "",
+    "password": ""
+  },
+
+  "plugins": [
+    {
+      "name" : "gitlab plugin",
+      "input" :{
+        "script" : "inputs/gitlab/gitlab.py",
+        "method" : "method"
+      },
+      "time" : {
+        "print" : "1h"
+      }
+    }
+  ]
+}

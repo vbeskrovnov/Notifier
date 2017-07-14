@@ -3,16 +3,19 @@
     "login": "",
     "password": ""
   },
-
   "plugins": [
     {
-      "name" : "gitlab plugin",
-      "input" :{
-        "script" : "inputs/gitlab/gitlab.py",
-        "method" : "method"
+      "name": "gitlab plugin",
+      "input": {
+        "script": "inputs/gitlab/gitlab.py",
+        "method": "method"
       },
-      "time" : {
-        "print" : "1h"
+      "output": {
+        "script" : "outputs/skype/notifier.py",
+        "method" : "notify"
+      },
+      "time": {
+        "print": "1h"
       }
     }
   ]

@@ -22,3 +22,8 @@ def parse():
                 messages.append(author_name + " wait while '" + mr_title
                                 + "' will be reviewed. You can open it by link: " + mr_url)
     return messages
+
+
+def input():
+    for message in parse():
+        print message

@@ -7,7 +7,8 @@
     {
       "name": "gitlab plugin",
       "input": {
-        "script": "inputs/gitlab/gitlab.py"
+        "script": "inputs/gitlab/gitlab.py",
+        "name": "gitlab"
       },
       "output": {
         "script" : "outputs/skype/notifier.py"

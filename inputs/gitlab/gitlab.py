@@ -25,5 +25,4 @@ def parse():
 
 
 def input():
-    for message in parse():
-        print message
+    return parse()

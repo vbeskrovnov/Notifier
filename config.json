@@ -1,8 +1,4 @@
 {
-  "skype": {
-    "login": "",
-    "password": ""
-  },
   "plugins": [
     {
       "name": "gitlab to skype plugin",

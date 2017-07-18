@@ -7,15 +7,10 @@
     {
       "name": "gitlab plugin",
       "input": {
-        "script": "inputs/gitlab/gitlab.py",
-        "method": "method"
+        "script": "inputs/gitlab/gitlab.py"
       },
       "output": {
-        "script" : "outputs/skype/notifier.py",
-        "method" : "notify"
-      },
-      "time": {
-        "print": "1h"
+        "script" : "outputs/skype/notifier.py"
       }
     }
   ]

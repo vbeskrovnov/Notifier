@@ -1,4 +1,5 @@
 {
+  "timeOfNotification" : "",
   "plugins": [
     {
       "name": "gitlab to skype plugin",

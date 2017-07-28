@@ -13,4 +13,4 @@ def notify(message):
 
 
 def output(message):
-    print message
+    notify(message)
